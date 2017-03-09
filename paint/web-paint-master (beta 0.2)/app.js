@@ -85,8 +85,8 @@ function makeFilter(sp, offset, tot) {
       for (var u = pos; u < pos + 3; ++u) sp[u] = Math.min(255, sp[u]);
       for (var u = pos; u < pos + 3; ++u) sp[u] = Math.max(0, sp[u]);        
     }
-    for (var i = 0; i < canvas.height; ++i) {
-      for (var j = 0; j < canvas.width; ++j) {
+    for (var i = 0; i < canvas.width; ++i) {
+      for (var j = 0; j < canvas.height; ++j) {
         changeCell(i, j);
       }
     }
@@ -223,7 +223,7 @@ var filters = {
   
   edge_1: function(imgData) {
     var sp = imgData;
-    mat = edge1_kernel;F
+    mat = edge1_kernel;
     return makeFilter(sp, 0, 1);
   },
   edge_2: function(imgData) {
@@ -374,7 +374,7 @@ var run = function(canvas){
     }
   };
 
-  canvas.height = 300;
+  canvas.height = 200;
   canvas.width = 610;
 
   $(canvas).on('mousedown', function(e){
