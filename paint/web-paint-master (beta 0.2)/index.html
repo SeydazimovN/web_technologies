@@ -1,0 +1,50 @@
+<html>
+  <head>
+    
+    <meta charset = "utf-8">
+    <title> nurba paint </title>
+
+    <link rel="stylesheet" href="app.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+  <body>
+    <center> <h1> nurba paint </h1> </center>
+    <center> <p> simple paint <p> </center>
+    <div class="container">
+      <div class="col">
+        <div class="canvas-container">
+          <canvas id="canvas"></canvas>
+        </div>
+        <div>
+          <button onclick="on_pen()"> pen </button>
+          <button onclick="on_eraser()"> eraser </button>
+          <button onclick="on_pouring()"> pouring </button>
+          <button class="js-button-action" data-filter="bfs"> bfs </button>
+
+          <button class="js-button-action" data-filter="noise"> make noise </button>
+          <button class="js-button-action" data-filter="inverse"> inverse </button>
+          <button class="js-button-action" data-filter="treshold"> threshold </button>
+          <button class="js-button-action" data-filter="laplas"> laplas </button>
+          <button class="js-button-action" data-filter="sobelX"> sobelX </button>
+          <button class="js-button-action" data-filter="sobelY"> sobelY </button>
+          <button class="js-button-action" data-filter="sharpen"> sharpen </button>
+          <button class="js-button-action" data-filter="emboss"> emboss </button> 
+          <button class="js-button-action" data-filter="box_blur"> box blur </button> 
+          <button class="js-button-action" data-filter="gaussian_blur"> gaussian blur </button> 
+          <button class="js-button-action" data-filter="edge_1"> edge 1 </button> 
+          <button class="js-button-action" data-filter="edge_2"> edge 2 </button> 
+          <button class="js-button-action" data-filter="edge_3"> edge 3 </button> 
+          <button class="js-button-action" data-filter="sepia"> sepia </button> 
+          <button class="js-button-action" data-filter="brightness"> brightness </button> 
+          <button class="js-button-action" data-filter="grayscale"> grayscale </button> 
+        </div>
+      </div>
+      <div class="col">
+        <div class="dropzone">
+          drop something here
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
