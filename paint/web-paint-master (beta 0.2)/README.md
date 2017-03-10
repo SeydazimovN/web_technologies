@@ -5,3 +5,5 @@ How to use pouring? <br />
 1. pick pen and draw something (circle, rectangle, triangle, etc) <br />
 2. pick pouring and click to random place in Canvas <br />
 3. click bfs <br />
+
+postscriptum: drag image before doing pouring, because imageData do not memorise 0 pixels.
