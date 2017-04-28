@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> my profile! </title>
+		<link rel = "stylesheet" href = "semantic.css">
+		<link rel = "stylesheet" href = "css/style.css">
+				<script src = "semantic.js"> </script>
+		<script src = "jQuery.js"> </script>
+
+		<script>
+			$(document).ready(function() {
+				$("input").focus(function() {
+					$(this).css("background-color", "red");
+				});
+				$("input").blur(function() {
+					$(this).css("background-color", "yellow");
+				});
+			});
+		</script>
+		<script>
+			$(document).ready(function() {
+				$("#demo").on({
+					mouseenter: function() {
+						$(this).css("background-color", "gold");
+					},
+					mouseleave: function() {
+						$(this).css("background-color", "lime");
+					},
+					click: function() {
+						$(this).css("background-color", "green");
+					}
+				});
+			});
+		</script>
+		<script>
+			$(document).ready(function() {
+				$("button").click(function() {
+					$("#div1").load("example.txt");
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1 id = "demo"> <span onmouseover = "this.style.color = 'red'"> NURBA Social Network </span> </h1>
+		<div class = "all">
+			<div class = "cps">
+				<div class = "country">
+					<!-- <h1> i'm from </h1> -->
+					<div class = "country_picture">
+					</div>
+					<div class = "user_info">
+					<div class="ui list">
+					  <div class="item">
+					    <i class="users icon"></i>
+					    <div class="content">
+					      NURBA
+					    </div>
+					  </div>
+					  <div class="item">
+					    <i class="marker icon"></i>
+					    <div class="content">
+					      Astana | Kazakhstan
+					    </div>
+					  </div>
+					  <div class="item">
+					    <i class="mail icon"></i>
+					    <div class="content">
+					      <a href="mailto:nurba_the_king@ns.com">nurba_the_king@ns.com</a>
+					    </div>
+					  </div>
+					  <div class="item">
+					    <i class="linkify icon"></i>
+					    <div class="content">
+					      <a href="http://www.sejda.com"> sejda.com </a>
+					    </div>
+					  </div>
+					</div>
+					</div>
+					<div class = "youtube_button">
+					<button class="ui youtube button">
+					  <i class="youtube icon"></i>
+					  YouTube/nurba_the_king
+					</button>
+					</div>
+					<div class = "linkedin_button">
+						<button class="ui linkedin button">
+						  <i class="linkedin icon"></i>
+						   You-Know-Who
+						</button>
+					</div>
+				</div>
+				<div class = "profile_image">
+					<div class="ui card">
+					  <div class="image">
+					    <img src="images/avatar.jpg">
+					  </div>
+					  <div class="content">
+					    <a class="header"> Seydazimov Nurbol </a>
+					    <div class="meta">
+					      <span class="date"> Last view in 09:33 </span>
+					    </div>
+					    <div class="description">
+					      Nurbol is ceo of NURBA Social network.
+					    </div>
+					  </div>
+					  <div class="extra content">
+					    <a>
+					      <i class="user icon"></i>
+					      555 Friends
+					    </a>
+					  </div>
+					</div>
+				</div>
+
+				<div class = "send_message">
+
+<div class="huge purple ui vertical buttons">
+  <button class="ui button"> <i class="mail icon"> </i> <a href="messenger.html"> login </a> </button>
+</div>
+					<h2 class="ui icon header">
+  <i class="settings icon"></i>
+  <div class="content">
+    Account Settings
+    <div class="sub header">Manage your account settings and set e-mail preferences.</div>
+  </div>
+</h2>
+
+</div>
+</div>
+		</div>
+
+	</body>
+
+	<footer>
+
+	</footer>
+</html>

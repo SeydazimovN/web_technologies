@@ -1,0 +1,161 @@
+body {
+	background-color: white;
+}
+
+.all {
+	width: 100%;
+	display: block;
+	background-image: url(../images/background.jpg);
+
+	/*background-size: contain;*/
+	background-repeat: no-repeat;
+}
+
+.cps {
+	height: 100%;
+	width: 1889px;
+	display: inline-block;
+	margin-bottom: 150px;
+	margin-top: 40px;
+}
+.country {
+	height: 300px;
+	width: 350px;
+	/*border: 3px solid darkblue;*/
+	background-size: cover;
+	float: left;
+	margin-left: 20px;
+	text-align: center;
+	color: purple;
+}
+.country_picture {
+	background-image: url(../images/country_picture.jpg);
+	font-size: cover;
+	margin-left: 60px;
+	height: 180px;
+	width: 310px;
+	/*border: 3px solid darkblue;*/
+	margin-bottom: 20px;
+	margin-top: 30px;
+}
+.profile_image {
+	height: 300px;
+	width: 300px;
+	/*border: 3px solid darkblue;*/
+	/*background-image: url(../images/avatar.jpg);*/
+	background-size: cover;
+	float: left;
+	margin-left: 150px;
+}
+.send_message {
+	height: 100%;
+	width: 300px;
+	/*border: 3px solid lightblue;*/
+	float: left;
+	margin-left: 70px;
+	margin-top: 30px;
+	text-transform: uppercase;
+	color: sienna;
+	text-align: center;
+}
+.personal_info {
+	/*border: 3px solid black;*/
+	height: 100%;
+	width: 500px;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-left: 400px;
+	font-size: 2em;
+	font-family: Bookman Old Style;
+	color: silver;
+}
+.show_all_button {
+	margin-top: 10px;
+	margin-bottom: 30px;
+	margin-left: 120px;
+}
+
+.profile_friend {
+	margin-left: 40px;
+}
+
+.events_cards {
+	margin-left: 50px;
+}
+
+.user_info {
+	margin-left: 120px;
+	margin-bottom: 20px;
+}
+
+.likes_button {
+	margin-top: 20px;
+}
+
+.youtube_button {
+	margin-left: 80px;
+}
+
+.linkedin_button {
+	margin-top: 10px;
+	margin-left: 80px;
+}
+
+.user-name-bold{
+  font-weight: bold;
+}
+
+.receiver-holder {
+	color: blue;
+}
+
+.messages {
+	background-image: url("fighter.jpg");
+	border: 1px solid black;
+	background-repeat: no-repeat;
+	height: 777px;
+}
+
+.message {
+	margin: 13px;
+	border-radius: 4px;
+}
+
+.mesview {
+	border-radius: 4px;
+	background-color: #CAF4BB;
+	padding: 3px;
+	border: 1px solid black;
+}
+
+.mr {
+	margin: 15px auto;
+	text-align: right;
+}
+
+
+.textType {
+	border: 1px solid black;
+	padding: 5px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.friendList {
+	margin-left: 10px;
+	width: 300px;
+	border: 1px solid black;
+	float: left;
+}
+
+.talking_box {
+	float: left;
+	width: 800px;
+	margin-left: 5px;
+	border: 1px solid black;
+	margin-bottom: 100px;
+}
+
+.secondRow {
+	margin: 60px;
+}
