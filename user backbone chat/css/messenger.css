@@ -1,0 +1,36 @@
+.messenger {
+  height: 400px;
+  width: 600px;
+  border: 1px solid black;
+}
+.messages {
+  height: 350px;
+}
+
+.red {
+  width: 30px;
+  height: 30px;
+  color: red;
+}
+.red-button {
+  background-color: red;
+}
+
+.yellow {
+  color: yellow;
+}
+.yellow-button {
+  width: 30px;
+  height: 30px;
+  background-color: yellow;
+}
+
+
+.blue {
+  color: blue;
+}
+.blue-button {
+  width: 30px;
+  height: 30px;
+  background-color: blue;
+}

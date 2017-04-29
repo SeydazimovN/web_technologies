@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<meta charset="UTF-8">
+	<title>friends list</title>
+</head>
+<body>
+	<div class="container">
+		<button style = "padding: 10px; margin: 10px;" onclick="go2MainPage()"> main page </button>
+		<center> <h1 style = "background-color: cyan; color: red;"> Welcome, <span id="authorID">  </span> ! </h1> </center>
+		<center> <p style = "font-size: 20px; color: white; background-color: #FF6666;"> total messages - <span id="chatCount">  </span> .</p> </center>
+
+
+		<table class="table">
+			<thead>
+				<tr>
+					<td><input class="form-control name-input"></td>
+					<td><button class="btn btn-primary add-user">add</button></td>
+				</tr>
+				<tr>
+					<td><input class="form-control search-input"></td>
+					<td><button class="btn btn-primary search-user">search</button></td>
+				</tr>
+			</thead>
+			<tbody class="users-list"></tbody>
+		</table>
+	</div>
+
+	<script type="text/template" class="users-list-template">
+		<td><span class="userID"><%= userID %></span></td>
+		<td><span class="name"><%= name %></span></td>
+		<td><span class="status"><%= status %></span></td>
+		<td><span class="lastVisit"> <%= lastVisit %> </span></td>
+		<td>
+			<button class = "btn btn-warning edit-user"> edit </button>
+			<button class = "btn btn-success send-user"> send </button>
+			<button class = "btn btn-success update-user" style="display:none"> update </button>
+		</td>
+	</script>
+
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/underscore/underscore.js"></script>
+	<script src="bower_components/backbone/backbone.js"></script>
+	<script src="app1.js"></script>
+</body>
+</html>

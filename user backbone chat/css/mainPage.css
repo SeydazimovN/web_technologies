@@ -1,0 +1,15 @@
+.SocialNetworkBox {
+  height: 400px;
+  width: 90%;
+  border: 1px solid black;
+}
+
+.SocialNetworkImage {
+  height: 90%;
+  width: 100%;
+  border: 1px solid black;
+  background-image: url('../img/SocialNetworkImage.jpg');
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+}

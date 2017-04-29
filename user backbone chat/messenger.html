@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel = "stylesheet" href = "css/messenger.css">
+	<link rel="stylesheet" src="jemoji/jemoji.min.css"/>
+
+	<meta charset="UTF-8">
+	<title> messenger </title>
+</head>
+<body>
+	<div class="container">
+		<button style = "padding: 10px; margin: 10px;" onclick="go2MainPage()"> main page </button>
+		<button style = "padding: 10px; margin: 10px;" onclick="go2UserList()"> friend list </button>
+
+		<h1> Messenger </h1>
+
+		<p> Chat between you(<span id = "you" style="color:blue"> </span>) and <span id = "friend" style="color:blue"> </span>. </p>
+		<table class="table">
+			<thead class="messages-list"></thead>
+			<tbody>
+				<tr>
+					<td><input id = "example" class="form-control message-input"></td>
+					<td><button class="btn btn-primary send-message"> send </button></td>
+					<td><button class="btn btn-primary emoji-button"> emoji </button></td>
+					<td><button class="btn btn-primary clear-button"> clear  </button></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<script type="text/template" class="messages-list-template">
+		<td><span class="who"><%= who %></span></td>
+		<td><span class="messageText"><%= messageText %></span></td>
+		<td><span class="lastVisit"><%= lastVisit %></span></td>
+		<td><span class="wasEdited"><%= wasEdited %></span></td>
+		<td><span class="wasDeleted"><%= wasDeleted %></span></td>
+		<td>
+			<button class = "btn btn-warning edit-message"> edit </button>
+			<button class = "btn btn-danger delete-message"> delete </button>
+			<button class = "btn btn-success update-message" style="display:none"> update </button>
+			<button class="btn red red-button">  </button>
+			<button class="btn yellow yellow-button"> </button>
+			<button class="btn blue blue-button"> </button>
+		</td>
+	</script>
+
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="jemoji/jemoji.min.js"></script>
+	<script src="bower_components/underscore/underscore.js"></script>
+	<script src="bower_components/backbone/backbone.js"></script>
+	<script src="messenger.js"></script>
+</body>
+</html>
