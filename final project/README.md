@@ -1,7 +1,7 @@
 Simple chat in JavaScript by using Backbone.js
 author: Seydazimov Nurbol
 
-To start download the project and open login.html
+To start -> download the project and open login.html
 
 Форма ввода имени пользователя (при входе)
 Слева список пользователей:
