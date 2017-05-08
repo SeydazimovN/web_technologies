@@ -1,0 +1,125 @@
+
+body {
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 100%;
+}
+.messenger {
+  height: 400px;
+  width: 600px;
+  border: 1px solid black;
+}
+.messages {
+  height: 350px;
+}
+
+.red {
+  width: 30px;
+  height: 30px;
+  color: red;
+}
+.red-button {
+  background-color: red;
+}
+
+.yellow {
+  color: yellow;
+}
+.yellow-button {
+  width: 30px;
+  height: 30px;
+  background-color: yellow;
+}
+
+
+.blue {
+  color: blue;
+}
+.blue-button {
+  width: 30px;
+  height: 30px;
+  background-color: blue;
+}
+
+.messages-list {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
+}
+.messageBox {
+  float: right;
+  margin: 10px;
+  border-radius: 4px;
+  background-color: #CAF4BB;
+  padding: 5px;
+  border: 1px solid black;
+  width: 400px;
+  float: left;
+}
+
+.messageProperty {
+  float: right;
+  width: 300px;
+  margin: 10px;
+}
+.messageText {
+  font-size: 20px;
+}
+.wasEdited {
+  font-size: 10px;
+}
+.wasDeleted {
+  font-size: 10px;
+}
+
+.lastVisit {
+  color: #900C3F;
+}
+.who {
+  color: #FF5733;
+  font-size: 25px;
+}
+
+.messengerBox {
+  float: right;
+  width: 750px;
+  /*border: 1px solid black;*/
+  margin-bottom: 30px;
+}
+.userlistBox {
+  float: left;
+  height: 300px;
+  width: 300px;
+  /*border: 1px solid black;*/
+}
+
+.name {
+  color: #FF5733;
+  font-size: 25px;
+}
+.status {
+  color: #900C3F;
+}
+.userButtons {
+  float: right;
+}
+
+.userID {
+  margin: 5px;
+  border-radius: 3px;
+  background-color: #13E2AE;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.profileImg {
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  background-image: url('koala_fighter.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

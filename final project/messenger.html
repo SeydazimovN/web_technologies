@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel = "stylesheet" href = "css/messenger.css">
+	<link rel="stylesheet" src="jemoji/jemoji.min.css"/>
+
+	<meta charset="UTF-8">
+	<title> messenger </title>
+</head>
+<body>
+		<div class="container">
+			<button style = "padding: 10px; margin: 10px;" onclick="go2MainPage()" class = "btn-block active"> sign in to my account </button>
+
+			<center>
+				<div class = "profileImg"> </div>
+				<h1> <span id = "authorNAME">  </span> </h1>
+				<h1> <span> # of chats:  </span> <span id = "chatCount">  </span>  </h1>
+			</center>
+			<hr>
+
+			<div class = "userlistBox">
+
+				<span><input class="form-control name-input" style = "width: 240px; float: left;"> <button class="btn btn-primary add-user">add</button></span>
+				<div class="users-list" style = "margin: 10px; "></div>
+				<span><input class="form-control search-input"  style = "width: 228px; float: left;"> <button class="btn btn-primary search-user" style = "float: right;">search</button> <span>
+
+				<script type="text/template" class="users-list-template">
+					 <p style = "float: left;"> <span class="userID"><%= userID %></span>  <span class="name"><%= name %></span> 					<span class="status"><%= status %></span>
+					</p>
+
+					<div class = "userButtons">
+						<button class = "btn btn-warning edit-user"> edit </button>
+						<button class = "btn btn-success send-user"> send </button>
+						<button class = "btn btn-success update-user" style="display:none"> update </button>
+					</div>
+						<span class="lastVisit" style = "float: right; margin-bottom: 20px; margin-top: 10px;"> <%= lastVisit %> </span>
+
+				</script>
+
+			</div>
+
+			<div class = "messengerBox">
+				<input class="form-control search-input-message" placeholder="Search for...">
+				<div class="messages-list">
+				</div>
+				<div>
+						<input id = "example" class="form-control message-input" placeholder="type message">
+						<button class="btn btn-primary send-message"> send </button>
+						<button class="btn btn-primary emoji-button"> emoji </button>
+						<button class="btn btn-primary clear-button"> clear  </button>
+						<button class="btn btn-primary select-button"> select  </button>
+				</div>
+			</div>
+
+		</div>
+
+		<script type="text/template" class="messages-list-template">
+
+			<div class = "messageBox">
+				<p>
+					<span class="who"> <b><%= who %> </b> </span>  <span class="lastVisit"><%= lastVisit %></p>
+					<span class="messageText"><%= messageText %> </span> <span class="wasEdited"><%= wasEdited %></span> <span class="wasDeleted"><%= wasDeleted %></span> </span>
+				</p>
+			</div>
+			<div class = "messageProperty">
+				<button class = "btn btn-warning edit-message"> edit </button>
+				<button class = "btn btn-danger delete-message"> delete </button>
+				<button class = "btn btn-success update-message" style="display:none"> update </button>
+				<button class="btn red red-button">  </button>
+				<button class="btn yellow yellow-button"> </button>
+				<button class="btn blue blue-button"> </button>
+			</div>
+		</script>
+
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script type="text/javascript" src="jemoji/jemoji.min.js"></script>
+		<script src="bower_components/underscore/underscore.js"></script>
+		<script src="bower_components/backbone/backbone.js"></script>
+		<script src="userlist.js"></script>
+		<script src="messenger_beta.js"></script>
+</body>
+</html>

@@ -4,48 +4,15 @@
 		<title> messenger </title>
 		<link rel = "stylesheet" href = "semantic.css">
 		<link rel = "stylesheet" href = "css/style.css">
-				<script src = "semantic.js"> </script>
 		<script src = "jQuery.js"> </script>
-
-		<script>
-			$(document).ready(function() {
-				$("input").focus(function() {
-					$(this).css("background-color", "red");
-				});
-				$("input").blur(function() {
-					$(this).css("background-color", "yellow");
-				});
-			});
-		</script>
-		<script>
-			$(document).ready(function() {
-				$("#demo").on({
-					mouseenter: function() {
-						$(this).css("background-color", "gold");
-					},
-					mouseleave: function() {
-						$(this).css("background-color", "lime");
-					},
-					click: function() {
-						$(this).css("background-color", "green");
-					}
-				});
-			});
-		</script>
-		<script>
-			$(document).ready(function() {
-				$("button").click(function() {
-					$("#div1").load("example.txt");
-				});
-			});
-		</script>
+		<script src = "semantic.js"> </script>
 	</head>
 
 <body>
 	<h1 id = "demo"> <span onmouseover = "this.style.color = 'red'"> NURBA Social Network </span> </h1>
 
 
-	<h1> Welcome, <span class="user-name-bold"></span> ! <h1> 
+	<h1> Welcome, <span class="user-name-bold"></span> ! <h1>
 	<div class = "friendList">
 		<h2 class="ui center aligned icon header">
 		<i class="circular users icon"></i>
