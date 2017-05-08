@@ -30,4 +30,10 @@ $(document).ready(function() {
     // alert('all things are good!');
     window.location='file:///home/seydazimovnurbol/Desktop/final%20project/messenger.html';
   })
+  
+  $('.reset-all').on('click', function() {
+    localStorage.clear();
+    localStorage.setItem('lastID', 100);
+    alert('All settings have been reset');
+  })
 })
